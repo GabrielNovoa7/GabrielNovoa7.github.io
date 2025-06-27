@@ -3,18 +3,28 @@ html{
     background-color: rgb(23, 22, 22);
 }
 
+h1{
+    margin: 15px;
+}
+h2{
+    margin:15px;
+}
+a {
+   color: rgb(238, 167, 52);
+   margin: 7px;
+}
+p{
+    margin: 15px;
+}
 header {
     box-shadow: -7px 7px 14px rgb(66, 165, 240);
     background-color: rgb(30, 50, 80);
     font-family: Roboto;
     color: white;
     margin: 15px;
-
+    text-align: center;
 }
 
-body a {
-    color: rgb(238, 167, 52);
-}
 
 
 #aboutMe{
@@ -31,6 +41,13 @@ body a {
     font-family: Roboto;
     color: white;
     margin: 15px;
+}
+dd{
+    margin-left: 15px;
+}
+dt{
+    margin-left: 15px;
+
 }
 
 #myResume{
