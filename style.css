@@ -1,69 +1,135 @@
-html{
-    border: 5px solid rgba(255, 255, 255, 0.831);
-    background-color: rgb(23, 22, 22);
+/* =========================
+   0) BASE / PAGE LAYOUT
+   ========================= */
+html {
+  border: 5px solid rgba(255, 255, 255, 0.831);
+  background-color: rgb(23, 22, 22);
 }
 
-h1{
-    margin: 15px;
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
 }
-h2{
-    margin:15px;
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px;
 }
+
+/* =========================
+   1) TYPOGRAPHY
+   ========================= */
+h1 {
+  margin: 0;
+  font-size: 38px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  margin: 0 0 10px 0;
+  font-size: 26px;
+  border-left: 4px solid rgb(66, 165, 240);
+  padding-left: 10px;
+}
+
+p {
+  margin: 15px 0;
+}
+
+/* =========================
+   2) LINKS (and NAV BUTTON LOOK)
+   ========================= */
 a {
-   color: rgb(238, 167, 52);
-   margin: 7px;
-}
-p{
-    margin: 15px;
-}
-header {
-    box-shadow: -7px 7px 14px rgb(66, 165, 240);
-    background-color: rgb(30, 50, 80);
-    font-family: Roboto;
-    color: white;
-    margin: 15px;
-    text-align: center;
+  color: rgb(238, 167, 52);
+  margin: 7px;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-
-
-#aboutMe{
-    box-shadow: -7px 7px 14px rgb(66, 165, 240);
-    background-color: rgb(30, 50, 80);
-    font-family: Roboto;
-    color: white;
-    margin: 15px;
+a:hover {
+  text-decoration: underline;
 }
 
-#myProjects{
-    box-shadow: -7px 7px 14px rgb(66, 165, 240);
-    background-color: rgb(30, 50, 80);
-    font-family: Roboto;
-    color: white;
-    margin: 15px;
-}
-dd{
-    margin-left: 15px;
-}
-dt{
-    margin-left: 15px;
-
+nav {
+  margin-top: 12px;
+  margin-bottom: 10px;
 }
 
-#myResume{
-    box-shadow: -7px 7px 14px rgb(66, 165, 240);
-    background-color: rgb(30, 50, 80);
-    font-family: Roboto;
-    color: white;
-    margin: 15px;
+/* Only the header links look like buttons */
+header nav a {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
 }
 
+header nav a:hover {
+  background: rgba(255, 255, 255, 0.16);
+  transform: scale(1.03);
+  transition: 0.15s ease;
+}
+
+/* =========================
+   3) SECTION / CARD STYLING
+   ========================= */
+header,
+#aboutMe,
+#myProjects,
+#myResume,
 footer {
-    box-shadow: -7px 7px 14px rgb(66, 165, 240);
-    background-color: rgb(30, 50, 80);
-    font-family: Roboto;
-    font-size: 20px;
-    text-align: center;
-    color: white;
-    margin: 15px;
+  box-shadow: -7px 7px 14px rgb(66, 165, 240);
+  background-color: rgb(30, 50, 80);
+  color: white;
+
+  margin: 15px;
+  padding: 18px;         /* (2) padding */
+  border-radius: 14px;   /* (2) rounded corners */
+}
+
+/* Keep header centered like you had */
+header {
+  text-align: center;
+}
+
+/* =========================
+   4) HOVER INTERACTIVITY (subtle)
+   ========================= */
+header,
+#aboutMe,
+#myProjects,
+#myResume,
+footer {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+header:hover,
+#aboutMe:hover,
+#myProjects:hover,
+#myResume:hover,
+footer:hover {
+  transform: translateY(-4px);
+  box-shadow: -10px 10px 20px rgba(66, 165, 240, 0.35);
+}
+
+/* =========================
+   5) PROJECT LIST FORMATTING
+   ========================= */
+dt,
+dd {
+  margin-left: 15px;
+}
+
+dt {
+  margin-top: 12px;
+}
+
+dd {
+  margin-bottom: 12px;
+}
+
+/* Footer text size you had */
+footer {
+  font-size: 20px;
+  text-align: center;
 }
