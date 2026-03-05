@@ -165,3 +165,52 @@ footer {
   font-size: 20px;
   text-align: center;
 }
+/* =========================
+   SKILL BARS
+========================= */
+
+.skill-bar {
+  margin: 12px 0;
+}
+
+.skill-bar span {
+  font-weight: 600;
+}
+
+.bar {
+  height: 10px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 10px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: rgb(238,167,52);
+  border-radius: 10px;
+}
+
+/* =========================
+   SKILL TAGS
+========================= */
+
+.tag-container {
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(255,255,255,0.12);
+  padding: 6px 12px;
+  margin: 6px 6px 0 0;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.tag:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-1px);
+  transition: 0.15s ease;
+}
