@@ -4,6 +4,7 @@
 html {
   border: 5px solid rgba(255, 255, 255, 0.831);
   background-color: rgb(23, 22, 22);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -77,6 +78,9 @@ header,
 #aboutMe,
 #myProjects,
 #myResume,
+#skills,
+#workingOn,
+#NavigationBar,
 footer {
   box-shadow: -7px 7px 14px rgb(66, 165, 240);
   background-color: rgb(30, 50, 80);
@@ -92,6 +96,28 @@ header {
   text-align: center;
 }
 
+#NavigationBar {
+  text-align: left;
+}
+#NavigationBar nav{
+    text-align: center;
+     margin-top: 12px;
+}
+#NavigationBar nav a {
+  display: inline-block;
+  padding: 6px 12px;          /* slimmer */
+  margin: 6px;
+  border-radius: 8px;         /* slightly smaller */
+  background: rgba(255,255,255,0.08);
+  font-size: 14px;            /* smaller text */
+  transition: all 0.15s ease;
+}
+
+#NavigationBar nav a:hover {
+  background: rgba(255,255,255,0.16);
+  transform: translateY(-2px);
+}
+
 /* =========================
    4) HOVER INTERACTIVITY (subtle)
    ========================= */
@@ -99,6 +125,9 @@ header,
 #aboutMe,
 #myProjects,
 #myResume,
+#skills,
+#workingOn,
+#NavigationBar,
 footer {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -107,6 +136,9 @@ header:hover,
 #aboutMe:hover,
 #myProjects:hover,
 #myResume:hover,
+#skills:hover,
+#workingOn:hover,
+#NavigationBar:hover,
 footer:hover {
   transform: translateY(-4px);
   box-shadow: -10px 10px 20px rgba(66, 165, 240, 0.35);

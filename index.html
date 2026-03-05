@@ -44,6 +44,18 @@
     </header>
 
     <main>
+      <!--NAVIGATION BUTTONS-->
+      <section id="NavigationBar">
+        <h2>Website Directory</h2>
+        <nav>
+          <a href="#aboutMe">About Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#myProjects">Projects</a>
+          <a href="#workingOn">Currently Working On</a>
+          <a href="#myResume">Resume</a>
+        </nav>
+      </section>
+
       <!-- ABOUT -->
       <section id="aboutMe">
         <h2>About Me</h2>
@@ -69,13 +81,23 @@
           problems, and grow fast.
         </p>
       </section>
+      <!-- SKILLS SECTION-->
+      <section id="skills">
+        <h2>Skills</h2>
+
+        <p><strong>Languages:</strong> C++, Python, HTML, CSS</p>
+        <p><strong>Concepts:</strong> OOP, Data Structures, File I/O</p>
+        <p><strong>Tools:</strong> Git, GitHub, VS Code, Visual Studio</p>
+      </section>
 
       <!-- PROJECTS -->
       <section id="myProjects">
         <h2>My Projects</h2>
 
         <dl>
-          <dt><strong>Console Based Rock Paper Scissors Game (C++)</strong></dt>
+          <dt>
+            <strong>• Console Based Rock Paper Scissors Game (C++)</strong>
+          </dt>
           <dd>
             A console-based Rock Paper Scissors game built in C++ that lets
             users play against the computer using randomized outcomes and
@@ -90,7 +112,7 @@
             >
           </dd>
 
-          <dt><strong>Employee Absence Management System (C++)</strong></dt>
+          <dt><strong>• Employee Absence Management System (C++)</strong></dt>
           <dd>
             A console-based system to add, update, delete, and search employee
             absence records using file I/O and OOP.
@@ -112,40 +134,44 @@
             </a>
           </dd>
 
-          <dt><strong>Resume Website (HTML/CSS)</strong></dt>
+          <dt><strong>• Resume Website (HTML/CSS)</strong></dt>
           <dd>
             My personal portfolio site hosted with GitHub Pages. (You’re viewing
             it right now.)
           </dd>
 
-          <dt><strong>Weather Website (In Progress)</strong></dt>
+          <dt><strong>• Weather Website (In Progress)</strong></dt>
           <dd>
             A weather web app that pulls live data from an API and displays it
             in a clean UI.
           </dd>
-
-          <dt>
-            <strong
-              >AI Syllabus Assignment Calendar (Idea / In Progress)</strong
-            >
-          </dt>
-          <dd>
-            A tool to help convert a syllabus into a schedule and keep track of
-            due dates automatically.
-          </dd>
         </dl>
+      </section>
+      <!--WORKING ON SECTION-->
+      <section id="workingOn">
+        <h2>Currently Working On</h2>
+        <p>• DES Encryption Project (C++)</p>
+        <p>• Improving this portfolio website</p>
+        <p>• Learning JavaScript for interactive web apps</p>
       </section>
 
       <!-- RESUME -->
       <section id="myResume">
         <h2>My Resume</h2>
-        <p>
-          <a
-            href="pdfFolder/Gabriel_Novoa_Resume2026.pdf"
-            target="_blank"
-            rel="noopener"
-          >
-            View / Download Resume (PDF)
+
+        <!-- PDF PREVIEW -->
+        <iframe
+          src="pdfFolder/Gabriel_Novoa_Resume2026.pdf"
+          width="100%"
+          height="600px"
+          style="border-radius: 10px; border: none"
+        >
+        </iframe>
+
+        <!-- BACKUP LINK -->
+        <p style="text-align: center; margin-top: 10px">
+          <a href="pdfFolder/Gabriel_Novoa_Resume2026.pdf" target="_blank">
+            Open / Download Resume (PDF)
           </a>
         </p>
       </section>
