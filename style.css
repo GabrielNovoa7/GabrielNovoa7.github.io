@@ -1,9 +1,11 @@
-/* =========================
-   0) BASE / PAGE LAYOUT
-   ========================= */
+/* =================================
+   GLOBAL PAGE SETTINGS
+   Controls the page background,
+   smooth scrolling, and base font.
+================================= */
 html {
   border: 5px solid rgba(255, 255, 255, 0.831);
-  background-color: rgb(44,44,44);
+  background-color: rgb(44, 44, 44);
   scroll-behavior: smooth;
 }
 
@@ -12,15 +14,16 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+/* Centers the main content area */
 main {
   max-width: 900px;
   margin: 0 auto;
   padding: 10px;
 }
 
-/* =========================
-   1) TYPOGRAPHY
-   ========================= */
+/* =================================
+   TEXT / TYPOGRAPHY
+================================= */
 h1 {
   margin: 0;
   font-size: 38px;
@@ -38,9 +41,6 @@ p {
   margin: 15px 0;
 }
 
-/* =========================
-   2) LINKS (and NAV BUTTON LOOK)
-   ========================= */
 a {
   color: rgb(238, 167, 52);
   margin: 7px;
@@ -52,12 +52,61 @@ a:hover {
   text-decoration: underline;
 }
 
+/* =================================
+   SHARED SECTION CARD STYLING
+   Applied to header, footer, and
+   all major content sections.
+================================= */
+header,
+footer,
+#NavigationBar,
+#aboutMe,
+#skills,
+#myProjects,
+#workingOn,
+#myResume {
+  background-color: rgb(30, 50, 80);
+  color: white;
+  margin: 15px;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: -7px 7px 14px rgb(66, 165, 240);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover animation for main content boxes */
+header:hover,
+footer:hover,
+#NavigationBar:hover,
+#aboutMe:hover,
+#skills:hover,
+#myProjects:hover,
+#workingOn:hover,
+#myResume:hover {
+  transform: translateY(-4px);
+  box-shadow: -10px 10px 20px rgba(66, 165, 240, 0.35);
+}
+
+/* Header stays centered */
+header {
+  text-align: center;
+}
+
+/* Footer text formatting */
+footer {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* =================================
+   NAVIGATION
+================================= */
 nav {
   margin-top: 12px;
   margin-bottom: 10px;
 }
 
-/* Only the header links look like buttons */
+/* Top header buttons */
 header nav a {
   display: inline-block;
   padding: 10px 14px;
@@ -71,82 +120,33 @@ header nav a:hover {
   transition: 0.15s ease;
 }
 
-/* =========================
-   3) SECTION / CARD STYLING
-   ========================= */
-header,
-#aboutMe,
-#myProjects,
-#myResume,
-#skills,
-#workingOn,
-#NavigationBar,
-footer {
-  box-shadow: -7px 7px 14px rgb(66, 165, 240);
-  background-color: rgb(30, 50, 80);
-  color: white;
-
-  margin: 15px;
-  padding: 18px;         /* (2) padding */
-  border-radius: 14px;   /* (2) rounded corners */
-}
-
-/* Keep header centered like you had */
-header {
-  text-align: center;
-}
-
+/* Website directory section */
 #NavigationBar {
   text-align: left;
 }
-#NavigationBar nav{
-    text-align: center;
-     margin-top: 12px;
+
+#NavigationBar nav {
+  text-align: center;
 }
+
 #NavigationBar nav a {
   display: inline-block;
-  padding: 6px 12px;          /* slimmer */
+  padding: 6px 12px;
   margin: 6px;
-  border-radius: 8px;         /* slightly smaller */
-  background: rgba(255,255,255,0.08);
-  font-size: 14px;            /* smaller text */
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 14px;
   transition: all 0.15s ease;
 }
 
 #NavigationBar nav a:hover {
-  background: rgba(255,255,255,0.16);
+  background: rgba(255, 255, 255, 0.16);
   transform: translateY(-2px);
 }
 
-/* =========================
-   4) HOVER INTERACTIVITY (subtle)
-   ========================= */
-header,
-#aboutMe,
-#myProjects,
-#myResume,
-#skills,
-#workingOn,
-#NavigationBar,
-footer {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-header:hover,
-#aboutMe:hover,
-#myProjects:hover,
-#myResume:hover,
-#skills:hover,
-#workingOn:hover,
-#NavigationBar:hover,
-footer:hover {
-  transform: translateY(-4px);
-  box-shadow: -10px 10px 20px rgba(66, 165, 240, 0.35);
-}
-
-/* =========================
-   5) PROJECT LIST FORMATTING
-   ========================= */
+/* =================================
+   PROJECT SECTION FORMATTING
+================================= */
 dt,
 dd {
   margin-left: 15px;
@@ -160,15 +160,11 @@ dd {
   margin-bottom: 12px;
 }
 
-/* Footer text size you had */
-footer {
-  font-size: 20px;
-  text-align: center;
-}
-/* =========================
+/* =================================
    SKILL BARS
-========================= */
-
+   Used for spoken/coding language
+   proficiency bars.
+================================= */
 .skill-bar {
   margin: 12px 0;
 }
@@ -179,103 +175,108 @@ footer {
 
 .bar {
   height: 10px;
-  background: rgba(255,255,255,0.15);
-  border-radius: 10px;
   margin-top: 5px;
   overflow: hidden;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .fill {
   height: 100%;
-  background: rgb(238,167,52);
   border-radius: 10px;
+  background: rgb(238, 167, 52);
 }
 
-/* =========================
-   SKILL TAGS
-========================= */
-
+/* =================================
+   PACKAGE TAGS
+   Small badge-style labels for
+   Python libraries / tools.
+================================= */
 .tag-container {
   margin-top: 10px;
 }
 
 .tag {
   display: inline-block;
-  background: rgba(255,255,255,0.12);
-  padding: 6px 12px;
   margin: 6px 6px 0 0;
+  padding: 6px 12px;
   border-radius: 20px;
   font-size: 14px;
   font-weight: 500;
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .tag:hover {
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   transform: translateY(-1px);
   transition: 0.15s ease;
 }
-/* From Uiverse.io by vinodjangid07 */
+
+/* =================================
+   SOCIAL ICONS
+   Used in the header and footer.
+================================= */
+.socialWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
   width: fit-content;
   height: fit-content;
+  padding: 25px;
   background-color: rgb(30, 50, 80);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.055);
+}
+
+.socialContainer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 25px;
-  gap: 20px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
-}
-
-/* all icon containers */
-.socialContainer {
   width: 52px;
   height: 52px;
-  background-color: rgb(44, 44, 44);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
-  transition-duration: .3s;
   border-radius: 12px;
+  background-color: rgb(44, 44, 44);
+  transition-duration: 0.3s;
 }
 
-/* LinkedIn */
-.linkedin:hover {
-  background-color: #0072b1;
-}
-
-/* GitHub */
-.github:hover {
-  background-color: #333;
-}
-
-/* Email */
-.email:hover {
-  background-color: #d44638;
-}
-
-/* click effect */
 .socialContainer:active {
   transform: scale(0.9);
 }
 
-/* icon size */
+/* Social icon hover colors */
+.linkedin:hover {
+  background-color: #0072b1;
+}
+
+.github:hover {
+  background-color: #333;
+}
+
+.email:hover {
+  background-color: #d44638;
+}
+
+/* SVG icon styling */
 .socialSvg {
   width: 20px;
 }
 
-/* icon color */
 .socialSvg path {
   fill: white;
 }
 
-/* animation when hovering */
 .socialContainer:hover .socialSvg {
   animation: slide-in-top 0.3s both;
 }
 
-/* animation keyframe */
+/* Social icon slide animation */
 @keyframes slide-in-top {
   0% {
     transform: translateY(-50px);
@@ -286,9 +287,4 @@ footer {
     transform: translateY(0);
     opacity: 1;
   }
-}
-.socialWrapper {
-  display: flex;
-  justify-content: center; /* centers horizontally */
-  align-items: center; /* centers vertically if height exists */
 }
