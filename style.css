@@ -59,6 +59,7 @@ a:hover {
 ================================= */
 header,
 footer,
+#feedback,
 #NavigationBar,
 #aboutMe,
 #skills,
@@ -78,6 +79,7 @@ footer,
 /* Hover animation for main content boxes */
 header:hover,
 footer:hover,
+#feedback:hover,
 #NavigationBar:hover,
 #aboutMe:hover,
 #skills:hover,
@@ -288,4 +290,30 @@ dd {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+#feedback input,
+#feedback textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 8px;
+  font-family: Roboto, sans-serif;
+  box-sizing: border-box;
+}
+
+#feedback button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: rgb(238, 167, 52);
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#feedback button:hover {
+  opacity: 0.9;
 }
