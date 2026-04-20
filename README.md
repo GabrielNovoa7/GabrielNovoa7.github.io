@@ -3,6 +3,7 @@
 My personal portfolio website built to showcase my projects, skills, certifications, and ongoing work as a Computer Science student.
 
 🌐 Live Site: https://gabrielnovoa.dev  
+🔗 GitHub Pages: https://gabrielnovoa7.github.io
 
 ---
 
