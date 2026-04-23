@@ -149,6 +149,7 @@ footer:hover,
 #certifications:hover,
 .project-card:hover,
 .cert-card:hover,
+.workingOn-card:hover,
 #myProjects:hover,
 #workingOn:hover,
 #myResume:hover {
@@ -284,13 +285,14 @@ dd {
   gap: 14px;
   margin-top: 12px;
 }
-
+.workingOn-grid,
 .cert-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 14px;
   margin-top: 12px;
 }
+.workingOn-card,
 .project-card,
 .cert-card {
   padding: 16px;
@@ -299,6 +301,7 @@ dd {
   border: 1px solid rgba(162, 192, 236, 0.24);
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
+.workingOn-card h3,
 .project-card h3,
 .cert-card h3 {
   margin: 0 0 8px;
